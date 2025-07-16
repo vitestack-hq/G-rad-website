@@ -21,10 +21,64 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <style>
+      .home-slider .overlay {
+        background: rgba(0, 0, 0, 0.5); 
+      }
+      .ftco_navbar {
+        background: #343a40 !important;
+        position: sticky;
+        top: 0;
+        z-index: 1000; 
+      }
+      .ftco-services .icon {
+        font-size: 3rem; 
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        margin-bottom: 1.5rem;
+      }
+      .ftco-services .media-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 220px; 
+        padding: 1rem;
+      }
+      .ftco-services .media-body p {
+        flex-grow: 1;
+        margin-bottom: 1rem; 
+      }
+      .ftco-services .media-body .btn {
+        margin-top: auto; 
+        align-self: center; 
+        width: 100%; 
+        text-align: center; 
+      }
+      @media (max-width: 991.98px) {
+        .ftco-services .media-body {
+          min-height: 250px; 
+        }
+      }
+      .ftco-section.ftco-accreditation {
+        padding: 4rem 0;
+        background-color: #f8f9fa;
+      }
+      .ftco-accreditation .row .col-md-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+      .ftco-accreditation img {
+        max-height: 100px;
+        width: auto;
+      }
+    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar"> <div class="container">
         <a class="navbar-brand" href="index.html">Teleradiology<span>Cloud</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
@@ -37,6 +91,7 @@
             <li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             <li class="nav-item cta"><a href="contact.html" class="nav-link" data-toggle="modal" data-target="#modalRequest"><span>Contact Us</span></a></li>
+            <li class="nav-item cta"><a href="#" class="nav-link ml-2"><span>Login</span></a></li>
           </ul>
         </div>
       </div>
@@ -69,7 +124,7 @@
           <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-tooth-1"></span>
+                <i class="fas fa-file-medical"></i>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Routine Reporting</h3>
@@ -81,7 +136,7 @@
           <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-dental-care"></span>
+                <i class="fas fa-hourglass-half"></i>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Urgent Reporting</h3>
@@ -93,7 +148,7 @@
           <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-tooth-with-braces"></span>
+                <i class="fas fa-lungs"></i>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Lung Screening</h3>
@@ -105,7 +160,7 @@
           <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-anesthesia"></span>
+                <i class="fas fa-stethoscope"></i>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Second Opinion</h3>
